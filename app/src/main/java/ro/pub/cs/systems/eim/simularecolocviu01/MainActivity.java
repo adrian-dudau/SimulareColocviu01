@@ -71,7 +71,14 @@ public class MainActivity extends AppCompatActivity {
         switch(requestCode) {
             case Constants.SECOND_ACTIVITY_REQUESR_CODE:
                 if (resultCode == Activity.RESULT_OK) {
-                    Bundle data = intent.getExtras();
+//                    Bundle data = intent.getExtras();
+//                    Log.d(Constants.LOG_TAG, data.toString());
+                    but1_value = but2_value = 0;
+                    text1.setText("0");
+                    text2.setText("0");
+                } else if (resultCode == Activity.RESULT_CANCELED) {
+//                    Bundle data = intent.getExtras();
+//                    Log.d(Constants.LOG_TAG, data.toString());
                 }
                 break;
         }

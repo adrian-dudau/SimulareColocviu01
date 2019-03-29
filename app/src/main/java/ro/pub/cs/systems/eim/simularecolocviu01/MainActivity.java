@@ -1,6 +1,7 @@
 package ro.pub.cs.systems.eim.simularecolocviu01;
 
 import android.app.Activity;
+import android.app.Service;
 import android.content.Intent;
 import android.provider.SyncStateContract;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +10,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import static android.app.Service.START_REDELIVER_INTENT;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -73,10 +77,12 @@ public class MainActivity extends AppCompatActivity {
                 if (resultCode == Activity.RESULT_OK) {
 //                    Bundle data = intent.getExtras();
 //                    Log.d(Constants.LOG_TAG, data.toString());
+                    Toast.makeText(getApplicationContext(),"User preased ok", Toast.LENGTH_LONG).show();
                     but1_value = but2_value = 0;
                     text1.setText("0");
                     text2.setText("0");
                 } else if (resultCode == Activity.RESULT_CANCELED) {
+                    Toast.makeText(getApplicationContext(),"User preased cancel", Toast.LENGTH_LONG).show();
 //                    Bundle data = intent.getExtras();
 //                    Log.d(Constants.LOG_TAG, data.toString());
                 }

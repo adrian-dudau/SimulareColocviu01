@@ -13,4 +13,15 @@ public interface Constants {
 
     final public static int SECOND_ACTIVITY_REQUESR_CODE = 2019;
 
+    final public static long SLEEP_TIME = 1000;
+
+    final public static String[] actionTypes = {
+            "ro.pub.cs.systems.eim.practicaltest01.arithmeticmean",
+            "ro.pub.cs.systems.eim.practicaltest01.geometricmean"
+    };
+
+    final public static String BROADCAST_RECEIVER_EXTRA = "message";
+
+    final public static String FIRST_NUMBER = "firstNumber";
+    final public static String SECOND_NUMBER = "secondNumber";
 }
